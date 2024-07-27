@@ -90,7 +90,7 @@
         }
 
         .name-text {
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: bold;
             font-family: Serif;
 
@@ -146,6 +146,61 @@
             z-index: 2;
         }
 
+        .profile-container {
+            text-align: center;
+            /* Center the image horizontally */
+        }
+        
+        .profile-pic {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            display: inline-block;
+            /* Prevent image from being displayed as block-level */
+        }
+        
+        @media (max-width: 480px) {
+            .profile-pic {
+                max-width: 250px;
+            }
+        }
+        /* Reading css  */
+        /* Base styles for the list */
+ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/* Improve spacing and readability on smaller screens */
+@media (max-width: 480px) {
+    ul {
+        padding-left: 15px;
+    }
+    
+    li {
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+}
+
+/* Style for nested lists */
+ul ul {
+    padding-left: 20px;
+}
+
+/* Optional: Add a border or background to distinguish sections */
+li strong {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    color: #e0e0e0; /* Lighter color for better contrast */
+}
+
+/* Reading css end */
         .rectangle {
             width: 100%;
             max-width: 800px;
@@ -241,15 +296,7 @@
             /* Allows wrapping on smaller screens */
         }
 
-        .profile-pic {
-            margin-left: auto;
-            width: 300px;
-            /* Adjust width as needed */
-            height: auto;
-            /* Maintain aspect ratio */
-            border-radius: 8px;
-            /* Optional: matches rectangle's border radius */
-        }
+        
 
         .rectangle {
             flex: 1;
@@ -280,12 +327,7 @@
                 /* Center content */
             }
 
-            .profile-pic {
-                width: 100%;
-                /* Adjust width to fit smaller screens */
-                max-width: 300px;
-                /* Set max-width */
-            }
+            
 
             .rectangle {
                 width: 100%;
@@ -293,12 +335,7 @@
             }
         }
 
-        @media (max-width: 480px) {
-            .profile-pic {
-                max-width: 250px;
-                /* Further adjust width for very small screens */
-            }
-        }
+        
 
         /* About me css end */
 
